@@ -1,2 +1,2 @@
 # interior-design-project
-no 360 design web sitesi
+NO:360 İnterior Design web sitesi
