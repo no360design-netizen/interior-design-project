@@ -6,7 +6,11 @@
   <title>No:360 Design</title>
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: Arial, sans-serif;
@@ -38,7 +42,9 @@
       color: #d6c6a8;
     }
 
-    section { padding: 80px 10%; }
+    section {
+      padding: 80px 10%;
+    }
 
     h2 {
       font-size: 34px;
@@ -76,9 +82,13 @@
       margin-bottom: 12px;
     }
 
-    .card p { color: #bbb; }
+    .card p {
+      color: #bbb;
+    }
 
-    .project-category { margin-bottom: 70px; }
+    .project-category {
+      margin-bottom: 70px;
+    }
 
     .project-category h3 {
       font-size: 26px;
@@ -114,7 +124,9 @@
       transition: .3s;
     }
 
-    .project-img:hover img { transform: scale(1.06); }
+    .project-img:hover img {
+      transform: scale(1.06);
+    }
 
     #lightbox {
       display: none;
@@ -161,22 +173,79 @@
       background: rgba(255,255,255,0.28);
     }
 
-    .prev { left: 35px; }
-    .next { right: 35px; }
+    .prev {
+      left: 35px;
+    }
+
+    .next {
+      right: 35px;
+    }
 
     .contact {
       text-align: center;
       background: #111;
     }
 
-    .contact a {
+    .contact-form {
+      max-width: 600px;
+      margin: 35px auto 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px 18px;
+      background: #171717;
+      border: 1px solid #2d2d2d;
+      border-radius: 14px;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #888;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #d6c6a8;
+    }
+
+    .contact-form button {
+      padding: 15px;
+      border: none;
+      border-radius: 30px;
+      background: #d6c6a8;
+      color: #0b0b0b;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .contact-form button:hover {
+      background: #fff;
+    }
+
+    .instagram-btn {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 25px;
       padding: 14px 30px;
       border: 1px solid #d6c6a8;
       color: #d6c6a8;
       text-decoration: none;
       border-radius: 30px;
+      transition: .3s;
+    }
+
+    .instagram-btn:hover {
+      background: #d6c6a8;
+      color: #111;
     }
 
     footer {
@@ -187,12 +256,31 @@
     }
 
     @media(max-width: 600px) {
-      header h1 { font-size: 38px; }
-      header p { font-size: 18px; }
-      section { padding: 60px 6%; }
-      .nav { font-size: 34px; padding: 10px 15px; }
-      .prev { left: 12px; }
-      .next { right: 12px; }
+
+      header h1 {
+        font-size: 38px;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+
+      .nav {
+        font-size: 34px;
+        padding: 10px 15px;
+      }
+
+      .prev {
+        left: 12px;
+      }
+
+      .next {
+        right: 12px;
+      }
     }
   </style>
 </head>
@@ -208,6 +296,7 @@
 
   <section class="about">
     <h2>Hakkımızda</h2>
+
     <p>
       No:360 Design; konut, villa, otel, mağaza, cafe ve restoran projelerinde
       tasarım, uygulama ve anahtar teslim çözümler sunan profesyonel bir iç mimarlık ofisidir.
@@ -219,6 +308,7 @@
     <h2>Hizmetlerimiz</h2>
 
     <div class="services">
+
       <div class="card">
         <h3>İç Mimari Tasarım</h3>
         <p>Mekana özel konsept, planlama, renk, malzeme ve detay tasarımı.</p>
@@ -238,55 +328,128 @@
         <h3>Proje Yönetimi</h3>
         <p>Tedarik, teklif, uygulama ve teslim süreçlerinin profesyonel yönetimi.</p>
       </div>
+
     </div>
   </section>
 
   <section>
+
     <h2>Projeler</h2>
 
     <div class="project-category">
+
       <h3>Villa Projeleri</h3>
       <p>Modern, sıcak ve fonksiyonel yaşam alanları.</p>
 
       <div class="project-gallery">
-        
-        <div class="project-img"><img src="LOFT UP FINISH.png" alt="Villa Projesi"></div>
-        <div class="project-img"><img src="FPK_ER_01_1.png" alt="Villa Projesi"></div>
-        <div class="project-img"><img src="FPK_ER_03.png" alt="Villa Projesi"></div>
-        <div class="project-img"><img src="FPK_02.png" alt="Villa Projesi"></div>
+
+        <div class="project-img">
+          <img src="LOFT UP FINISH.png" alt="Villa Projesi">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_ER_01_1.png" alt="Villa Projesi">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_ER_03.png" alt="Villa Projesi">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_02.png" alt="Villa Projesi">
+        </div>
+
       </div>
     </div>
 
     <div class="project-category">
+
       <h3>Otel & Suite Odalar</h3>
       <p>Konfor, lüks ve detay kalitesini birleştiren mekanlar.</p>
 
       <div class="project-gallery">
-        <div class="project-img"><img src="FPK_OTEL TS_SUİT_01.png" alt="Otel Suite Oda"></div>
-        <div class="project-img"><img src="FPK_OTEL TS_SUİT_01_MLZ..png" alt="Otel Suite Oda Malzeme"></div>
-        <div class="project-img"><img src="FPK_OTEL TS_SUİT_02.png" alt="Otel Suite Oda"></div>
-        <div class="project-img"><img src="FPK_OTEL TS_SUİT_03.png" alt="Otel Suite Oda"></div>
-        <div class="project-img"><img src="FPK_OTEL TS_SUİT_03_MLZ..png" alt="Otel Suite Oda Malzeme"></div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_01.png" alt="Otel Suite Oda">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_01_MLZ..png" alt="Otel Suite Oda">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_02.png" alt="Otel Suite Oda">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_03.png" alt="Otel Suite Oda">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_03_MLZ..png" alt="Otel Suite Oda">
+        </div>
+
       </div>
     </div>
 
     <div class="project-category">
+
       <h3>Cafe & Restaurant Projeleri</h3>
       <p>Marka kimliğine uygun etkileyici ticari alanlar.</p>
 
-       <div class="project-gallery">
-        <div class="project-img"><img src="FPK_CAFE_FK_01.png" alt="Cafe & Restaurant Projeleri"></div>
-        <div class="project-img"><img src="FPK_CAFE_FK_02.png" alt="Cafe & Restaurant Projeleri"></div>
-         <div class="project-img"><img src="FPK_CAFE_FK_03.png" alt="Cafe & Restaurant Projeleri"></div>
+      <div class="project-gallery">
+
+        <div class="project-img">
+          <img src="FPK_CAFE_FK_01.png" alt="Cafe">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_CAFE_FK_02.png" alt="Cafe">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_CAFE_FK_03.png" alt="Cafe">
+        </div>
+
       </div>
     </div>
 
   </section>
 
   <section class="contact">
+
     <h2>İletişim</h2>
+
     <p>Projeleriniz için bizimle iletişime geçin.</p>
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+
+    <form class="contact-form"
+      action="mailto:info@no360design.com"
+      method="post"
+      enctype="text/plain">
+
+      <input type="text" name="Ad Soyad" placeholder="Adınız Soyadınız" required>
+
+      <input type="email" name="E-posta" placeholder="E-posta Adresiniz" required>
+
+      <input type="tel" name="Telefon" placeholder="Telefon Numaranız">
+
+      <textarea name="Mesaj"
+        rows="5"
+        placeholder="Mesajınız"
+        required></textarea>
+
+      <button type="submit">Gönder</button>
+
+    </form>
+
+    <a class="instagram-btn"
+      href="https://www.instagram.com/"
+      target="_blank">
+
+      Instagram
+
+    </a>
+
   </section>
 
   <footer>
@@ -294,64 +457,111 @@
   </footer>
 
   <div id="lightbox">
-    <span onclick="closeLightbox()" class="close-btn">&times;</span>
-    <button class="nav prev" onclick="prevImage()">❮</button>
+
+    <span onclick="closeLightbox()" class="close-btn">
+      &times;
+    </span>
+
+    <button class="nav prev" onclick="prevImage()">
+      ❮
+    </button>
+
     <img id="lightbox-img">
-    <button class="nav next" onclick="nextImage()">❯</button>
+
+    <button class="nav next" onclick="nextImage()">
+      ❯
+    </button>
+
   </div>
 
   <script>
+
     const projectImages = document.querySelectorAll(".project-img img");
+
     const lightbox = document.getElementById("lightbox");
+
     const lightboxImg = document.getElementById("lightbox-img");
 
     let currentIndex = 0;
 
     projectImages.forEach(function(img, index) {
+
       img.addEventListener("click", function() {
+
         currentIndex = index;
+
         showImage();
+
         lightbox.style.display = "flex";
+
       });
+
     });
 
     function showImage() {
+
       lightboxImg.src = projectImages[currentIndex].src;
+
     }
 
     function closeLightbox() {
+
       lightbox.style.display = "none";
+
     }
 
     function nextImage() {
+
       currentIndex++;
+
       if (currentIndex >= projectImages.length) {
+
         currentIndex = 0;
+
       }
+
       showImage();
+
     }
 
     function prevImage() {
+
       currentIndex--;
+
       if (currentIndex < 0) {
+
         currentIndex = projectImages.length - 1;
+
       }
+
       showImage();
+
     }
 
     document.addEventListener("keydown", function(e) {
+
       if (lightbox.style.display === "flex") {
+
         if (e.key === "ArrowRight") nextImage();
+
         if (e.key === "ArrowLeft") prevImage();
+
         if (e.key === "Escape") closeLightbox();
+
       }
+
     });
 
     lightbox.addEventListener("click", function(e) {
+
       if (e.target === lightbox) {
+
         closeLightbox();
+
       }
+
     });
+
   </script>
 
 </body>
