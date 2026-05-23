@@ -58,7 +58,7 @@
       color: #ddd;
     }
 
-    .services, .projects {
+    .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 25px;
@@ -86,32 +86,61 @@
       color: #bbb;
     }
 
+    .project-category {
+      margin-bottom: 70px;
+    }
+
+    .project-category h3 {
+      font-size: 26px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .project-category p {
+      color: #bbb;
+      margin-bottom: 25px;
+    }
+
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
     .project-img {
-      height: 230px;
+      height: 250px;
       border-radius: 18px;
       overflow: hidden;
-      margin-bottom: 15px;
       cursor: pointer;
+      border: 1px solid #2d2d2d;
+      background: #171717;
     }
 
     .project-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
+      transition: .3s;
+    }
+
+    .project-img:hover img {
+      transform: scale(1.06);
     }
 
     #lightbox {
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,.9);
+      background: rgba(0,0,0,.92);
       z-index: 9999;
       align-items: center;
       justify-content: center;
+      padding: 30px;
     }
 
     #lightbox img {
-      max-width: 90%;
+      max-width: 92%;
       max-height: 90%;
       border-radius: 18px;
     }
@@ -154,6 +183,10 @@
 
       header p {
         font-size: 18px;
+      }
+
+      section {
+        padding: 60px 6%;
       }
     }
   </style>
@@ -206,80 +239,67 @@
   <section>
     <h2>Projeler</h2>
 
-    <div class="projects">
+    <div class="project-category">
+      <h3>Villa Projeleri</h3>
+      <p>Modern, sıcak ve fonksiyonel yaşam alanları.</p>
 
-      <div class="card">
+      <div class="project-gallery">
         <div class="project-img">
-          <img src="FPK_02.png" alt="Villa Projeleri">
-          </div>
-
-      <div class="card">
-        <div class="project-img">
-          <img src="LOFT UP FINISH.png" alt="Villa Projeleri">
-           </div>
-
-      <div class="card">
-        <div class="project-img">
-          <img src="FPK_ER_01_1.png" alt="Villa Projeleri">
-          </div>
-
-      <div class="card">
-        <div class="project-img">
-          <img src="FPK_ER_03.png" alt="Villa Projeleri">
-          
+          <img src="FPK_02.png" alt="Villa Projesi">
         </div>
-        <h3>Villa Projeleri</h3>
-        <p>Modern, sıcak ve fonksiyonel yaşam alanları.</p>
-        
-       
+
+        <div class="project-img">
+          <img src="LOFT UP FINISH.png" alt="Villa Projesi">
         </div>
-          <div class="card">
-        <h3>Otel & Suite Odalar</h3>
-        <p>Konfor, lüks ve detay kalitesini birleştiren mekanlar.</p>
 
-
-            </div>
-
-      <div class="card">
         <div class="project-img">
-          <img src="FPK_OTEL TS_SUİT_01.png" alt="Otel & Suite Odalar">
+          <img src="FPK_ER_01_1.png" alt="Villa Projesi">
+        </div>
 
-
-             </div>
-
-      <div class="card">
         <div class="project-img">
-          <img src="FPK_OTEL TS_SUİT_01_MLZ..png" alt="Otel & Suite Odalar">
-
-           </div>
-
-      <div class="card">
-        <div class="project-img">
-          <img src="FPK_OTEL TS_SUİT_02.png" alt="Otel & Suite Odalar">
-
-           </div>
-
-      <div class="card">
-        <div class="project-img">
-          <img src="FPK_OTEL TS_SUİT_03.png" alt="Otel & Suite Odalar">
-
-           </div>
-
-      <div class="card">
-        <div class="project-img">
-          <img src="FPK_OTEL TS_SUİT_03_MLZ..png" alt="Otel & Suite Odalar">
-        
+          <img src="FPK_ER_03.png" alt="Villa Projesi">
+        </div>
       </div>
-      <div class="card">
+    </div>
+
+    <div class="project-category">
+      <h3>Otel & Suite Odalar</h3>
+      <p>Konfor, lüks ve detay kalitesini birleştiren mekanlar.</p>
+
+      <div class="project-gallery">
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_01.png" alt="Otel Suite Oda">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_01_MLZ..png" alt="Otel Suite Oda Malzeme">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_02.png" alt="Otel Suite Oda">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_03.png" alt="Otel Suite Oda">
+        </div>
+
+        <div class="project-img">
+          <img src="FPK_OTEL TS_SUİT_03_MLZ..png" alt="Otel Suite Oda Malzeme">
+        </div>
+      </div>
+    </div>
+
+    <div class="project-category">
+      <h3>Cafe & Restaurant Projeleri</h3>
+      <p>Marka kimliğine uygun etkileyici ticari alanlar.</p>
+
+      <div class="project-gallery">
         <div class="project-img">
           <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Cafe Restaurant">
         </div>
-        <h3>Cafe & Restaurant</h3>
-        <p>Marka kimliğine uygun etkileyici ticari alanlar.</p>
-        
       </div>
-
     </div>
+
   </section>
 
   <section class="contact">
